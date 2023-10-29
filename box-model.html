@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>box model</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            #root {
+                position: absolute;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -50%);
+                border: 10px solid lightblue;
+                padding: 40px;
+                margin: 10px;
+                background-color: indianred;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">content</div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Selectors</title>
+        <style type="text/css" media="all">
+            * {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            /* tag selector */
+            h1 {
+                background-color: indianred;
+            }
+            #a {
+                background-color: navajowhite;
+            }
+            .b {
+                background-color: hotpink;
+            }
+            div > div > h1 {
+                background-color: indigo;
+            }
+            div h2 {
+                background-color: khaki;
+                font-size: 35px;
+            }
+            #root {
+                background-color: sandybrown;
+                font-size: 35px;
+            }
+
+            #root:hover {
+                background-color: red;
+            }
+            #root > a:visited {
+                color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>tag Selectors</h1>
+        <h1 id="a">id Selectors</h1>
+        <h1 class="b">class Selectors</h1>
+        <div>
+            <div>
+                <h1>child Selectors</h1>
+            </div>
+            <div>
+                <div>
+                    <h2>Descendent</h2>
+                </div>
+                <h2>selector</h2>
+            </div>
+        </div>
+        <div id="root">
+            pseudo selector <a href="https://www.google.com">hello</a>
+        </div>
+    </body>
+</html>

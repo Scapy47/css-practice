@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>text styling</title>
+<meta name="theme-color" content="#000000" />
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+body {
+background-color: wheat;
+}
+#root {
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#card {
+position: absolute;
+background-color: white;
+overflow: scroll;
+width: 300px;
+height: 500px;
+border-radius: 20px;
+border: 1px solid black;
+}
+#card > img {
+margin: 10px;
+border-radius: 20px;
+width: 280px;
+height: 200px;
+}
+#card > span {
+background-color: wheat;
+border: 1px solid black;
+margin-left: 10px;
+border-radius: 20px;
+padding: 5px 15px;
+font-weight: bold;
+}
+#card > span:hover {
+background-color: black;
+color: white;
+}
+.text {
+margin: 0px 20px;
+}
+#card > h3 {
+margin-top: 20px;
+font-weight: bold;
+font-size: 40px;
+}
+
+#card > button {
+background-color: wheat;
+border: 1px solid black;
+position: relative;
+left: 32%;
+top: 60px;
+border-radius: 20px;
+font-weight: bold;
+padding: 10px 20px;
+}
+#card > button:hover {
+background-color: black;
+color: white;
+}
+
+</style>
+</head>
+
+<body>
+<div id="root">
+<div id="card">
+<!-- change src to card.png -->
+<img src="https://images.unsplash.com/photo-1697572801935-60d4a28a861b?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+/
+width="300">
+<span>hello</span>
+<span>world</span>
+<h3 class="text">hello world</h3>
+<p class="text">
+Ex qui aliqua non nulla et dolore pariatur. Laborum do veniam aliquip do incididunt in. Do esse non pariatur laborum aute.
+</p>
+<button type="submit">read more</button>
+</div>
+</div>
+</body>
+
+</html>
